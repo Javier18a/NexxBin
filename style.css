@@ -202,3 +202,96 @@ button{
 .close:hover {
     color: red;
 }
+
+@media screen and (max-width: 768px){
+   
+    body{
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        height: 13vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .fa-solid,
+    .fas {
+        display: none;
+    }
+
+    .servi{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    #formulario{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    .convertidor-bin,
+    .convertidor-dec{
+        margin-bottom: 30px;
+        flex-direction: column;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .insert{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .result{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input{
+        width: 80%;
+        height: 70px;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: rgba(0, 0, 0, 0.048);
+    }
+
+    
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="img/Nexxo.jpeg" alt="NexxBin">
+            <h4>NexxBin</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#"> <i class="fa-solid fa-calculator"></i></i> Calcular</a></li>
+                <li id="btn-ayuda"><a href=""> <i class="fa-solid fa-circle-info"></i>Ayuda</a></li>
+                <li><a href="#"> <i class="fa-solid fa-phone"></i> Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="servi"> <i class="fa-solid fa-user"></i> Servicios</a>
+    </header>
+
+    <main>
+
+        <div id="formulario">
+            <div class="logo">NexxBin</div>
+
+            <div class="calculador_Nhost">
+                <div class="insert">
+                    <h2>Obtener el Número de Host</h2>
+                    <input type="text" id="ipInput" placeholder="Ingresa la IP (ej: 172.16.48.101)">
+                    <input type="text" id="maskInput1" placeholder="Máscara (ej: 16)">
+                </div>
+                <div class="result">
+                    <p id="resultadoHost"></p>
+                    <button onclick="calcularHost()">Calcular</button>
+                </div>
+            </div>
+
+            <div class="calculador_Nred">
+                <div class="insert">
+                    <h2>Obtener la IP de un Host en una Red</h2>
+                    <input type="text" id="redInput" placeholder="Ingresa la red (ej: 10.0.0.0)">
+                    <input type="text" id="maskInput2" placeholder="Máscara (ej: 8)">
+                    <input type="number" id="hostInput" placeholder="Número de host (ej: 330108)">
+                </div>
+
+                <div class="result">
+                    <p id="resultadoIP"></p>
+                    <button onclick="calcularIP()">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desarrollado por <a href="https://javier18a.github.io/Jav-dev/" target="_blank">Ing. Javier</a>- Nexxo</p>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+    <script src="Sefunda_fase.js"></script>
+
+</body>
+
+</html>
